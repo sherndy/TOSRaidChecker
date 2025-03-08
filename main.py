@@ -31,7 +31,7 @@ async def on_ready():
     for guild in bot.guilds:
         log_channel = discord.utils.get(guild.text_channels, id=log_channel_id)
         bot_channel = discord.utils.get(guild.text_channels, id=bot_channel_id)
-        print('ginger',raidhelperid,log_channel,bot_channel)
+        print(raidhelperid,log_channel,bot_channel)
 #    for msg in bot_channel.history(limit=5).flatten():
 #        if msg.author == raidhelperid:
 #            print(f'Message: {msg.content} - Time: {msg.created_at}')
@@ -55,7 +55,7 @@ async def on_raw_message_edit(payload):
         else:
             for element in Lafter:
                 Lbefore.remove(element)
-                print(Lbefore + "Bailed on us niggas at" + datetime)
+                print(Lbefore + "Bailed on us at" + datetime)
         before = after
 
 
